@@ -1,0 +1,71 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Resume Builder</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <h1>Interactive Resume Builder</h1>
+ 
+     <!-- Form to collect user data -->
+     <form id="resumeForm">
+         <fieldset>
+             <legend>Personal Information</legend>
+             <label for="name">Name: </label>
+             <input type="text" id="name" name="name" required><br><br>
+ 
+             <label for="email">Email: </label>
+             <input type="email" id="email" name="email" required><br><br>
+ 
+             <label for="phone">Phone: </label>
+             <input type="tel" id="phone" name="phone" required><br><br>
+         </fieldset>
+ 
+         <fieldset>
+             <legend>Education</legend>
+             <label for="education">Education: </label>
+             <textarea id="education" name="education" rows="4" required></textarea><br><br>
+         </fieldset>
+ 
+         <fieldset>
+             <legend>Experience</legend>
+             <label for="experience">Experience: </label>
+             <textarea id="experience" name="experience" rows="4" required></textarea><br><br>
+         </fieldset>
+ 
+         <fieldset>
+             <legend>Skills</legend>
+             <label for="skills">Skills: </label>
+             <textarea id="skills" name="skills" rows="4" required></textarea><br><br>
+         </fieldset>
+ 
+         <button type="submit">Generate Resume</button>
+     </form>
+ 
+     <hr>
+ 
+     <h2>Your Resume Preview</h2>
+     <div id="resumePreview">
+         <h3 >Personal information </h3><br>
+         <h4> My Name</h4>
+         <p id="previewName"></p>
+         <h4>Email Adress</h4>
+         <p id="previewEmail"></p>
+         <h4> Mobile Number</h4>
+         <p id="previewPhone"></p>
+         <br>
+         <h4>My Education</h4>
+         <p id="previewEducation"></p>
+         <h4>My Experience</h4>
+         <p id="previewExperience"></p>
+         <h4>My Skills</h4>
+         <p id="previewSkills"></p>
+     </div>
+ 
+     <script src="resumeBuilder.js"></script> <!-- Link to TypeScript compiled JS -->
+ </body>
+ </html>
+ 
